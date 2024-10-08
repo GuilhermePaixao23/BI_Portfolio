@@ -1,0 +1,10 @@
+SELECT 
+	[DATE_MOVE]
+	,[DATE_VALUE]
+	,CONCAT(left([DSC], CHARINDEX(' ', [DSC])), RIGHT([DSC], 3)) as DSC
+	,cast([DEBIT] + (RAND()*(20-0+1) * [DEBIT]) as decimal(10,2)) AS DEBIT
+	,cast([CREDIT] + (RAND()*(20-0+1) * [CREDIT]) as decimal(10,2)) AS CREDIT
+	,cast([ACCOUNTING_BALANCE] + (RAND()*(20-0+1) * [ACCOUNTING_BALANCE]) as decimal(10,2)) AS ACCOUNTING_BALANCE
+	,cast([AVAILABLE_BALANCE] + (RAND()*(20-0+1) * [AVAILABLE_BALANCE]) as decimal(10,2)) AS AVAILABLE_BALANCE
+	,[CAT]
+FROM [CONTAS].[dbo].[CONTAS_CGD]
