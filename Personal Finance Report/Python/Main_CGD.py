@@ -4,15 +4,16 @@ import pandas as pd
 import pyodbc
 
 # Directory containing CSV files
-directory = r"C:\Users\paixa\OneDrive\Documentos\_Training\_Projects\CGD"
+directory = r"PATH"
 
 correr_egp = subprocess.run(
-    ["python",r"C:\Users\paixa\OneDrive\Documentos\_Training\_Projects\CGD\PY\File_Treatment_CGD.py"],
+    ["python",r"PATH"],
     capture_output=True,
     text=True,
     check=True,
     timeout=10000,
     )
+#This part of the code "subprocess" allows me to run the first script "File_treatment_CGD" in this script
 
 # SQL Server connection details
 SERVER = 'MSI\SQLEXPRESS'
