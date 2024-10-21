@@ -1,2 +1,2 @@
 # BI_Portfolio - Code View
-Housing & Rental prices in Lisbon Project
+This is a code view of all the main codes that I used in my Bi Portfolio
