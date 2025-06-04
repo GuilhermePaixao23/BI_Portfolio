@@ -85,8 +85,8 @@ def get_latest_pdf_attachment(service, sender_email, download_path):
 # 3. Parsing do PDF com plumber
 # -----------------------------
 def parse_pdf(loc):
-    start_text = "-------------------" # 3.1. I use this texts to guide pdfplumber to limit parts of the pdf that I want
-    stop_text = "--------------------" # 3.1. I use this texts to guide pdfplumber to limit parts of the pdf that I want
+    start_text = "-------------------" # 3.1. I use this strings to guide pdfplumber to limit parts of the pdf that I want
+    stop_text = "--------------------" # 3.1. I use this strings to guide pdfplumber to limit parts of the pdf that I want
     transaction_pattern = re.compile(r"^\d{4}-\d{2}-\d{2} \d{4}-\d{2}-\d{2} .+ [-+]?\d[\d\.]*,\d{2} [-+]?\d[\d\.]*,\d{2}$")
 
     extract = False
